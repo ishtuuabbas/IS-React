@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    function Test (value,index,Arr) {
+        return "v is"+ value;
+        
+    }
+    var arr=[1,2,3,4];
+
+    var res = arr.map(Test)
+    console.log(res);
+
+// Using Anoymous Function
+    var arr=[1,2,3,4];
+    var res=arr.map(function(value,index,Arr){
+        return "v is "+ value;
+    });
+    console.log(res);
+
+//arrow function
+    var arr2=[1,2,3,4];
+    var res2=arr2.map((value,index,Arr)=>{
+        if(value%2==0)
+        return "even" ;
+        else
+        return "odd";
+               
+    });
+    console.log(res2);
+</body>
+</html>

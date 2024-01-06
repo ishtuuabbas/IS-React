@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+    <script>
+        var mydata=[
+            {id:1, name:"Ali Raza",url:"https://www.youtube.com/watch?v=V0xbP683NAc",urlText:"Learn in Urdu TuTorials" },
+            {id:2, name:"Hassan Raza",url:"https://www.youtube.com/watch?v=V0xbP683NAc",urlText:"Learn in Urdu TuTorials2"},
+            {id:3, name:"Ali Raza",url:"https://www.youtube.com/watch?v=V0xbP683NAc",urlText:"Learn in Urdu TuTorials3"},
+            {id:4, name:"Ali Raza",url:"https://www.youtube.com/watch?v=V0xbP683NAc",urlText:"Learn in Urdu TuTorials4"}
+              ];
+              for (var i=0;i<mydata.length;i++){
+                var obj=mydata[i];
+
+                var h3 =document.createElement("h3");
+                h3.innerText=obj.name;
+                div.appendChild(h3);
+
+                var ael=document.createElement("a");
+                ael.innerText=obj.urlText;
+                ael.setAttribute("href",obj.url);
+                div.appendChild(ael);
+
+                var btn=document.createElement("button");
+                btn.innerText="Count Me in";
+                btn.onclick=function(){
+                    alert("hello")
+                };
+                div.appendChild(div);
+
+                var appEl=document.getElementById("app");
+                appEl.appendChild(div);
+
+
+
+              }
+              var btnAddPro = document.getElementById("addNewPrfile");
+              btnAddPro.onclick= funntion(){
+                var newObj ={id:1, name:"Ali Raza",url:"https://www.youtube.com/watch?v=V0xbP683NAc",urlText:"Learn in Urdu TuTorials" }
+}
+              
+    </script>
+</body>
+</html>

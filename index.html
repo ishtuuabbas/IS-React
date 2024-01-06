@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="app">
+
+    </div>
+
+    <script>
+        var e1=document.createElement("h3");
+        e1.setAttribute("id","myheader");
+        e1.setAttribute("class","test");
+        e1.innerText="Welcom to our clinics ";
+
+        e1.onclick= function(){
+            alert("hello");
+        }
+        var appEl=document.getElementById("app");
+        appEl.appendChild(e1);
+    </script> -->
+
+    <div id="app">
+        <!-- Number:<input type="text"id="txt1"/> -->
+        <span id="counter">0</span>
+        <button id="btnTest" onclick="counterClickHandler();">Increase Count</button>
+
+        <!-- <button id="btnTest">Increase Count</button> -->
+    </div>
+    <Script>
+        var counter=0;
+        // var btn = document.getElementById("btnTest");
+        // btn.onclick=function(){
+        //     var v=document.getElementById("counter");
+        //    // alert(v)
+        //    counter++;
+        //    v.innerText=counter;
+        // }
+        ////inline way
+        function counterClickHandler(){
+            var t =document.getElementById("counter");
+            counter++;
+            t.innerText=counter;
+        }
+    </Script>
+</body>
+</html>
